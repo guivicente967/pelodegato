@@ -3,21 +3,80 @@ title: "Introdução ao Rmarkdown"
 description: |
   A short description of the post.
 author:
-  - name: Nora Jones
-    url: https://example.com/norajones
+  - name: Guilherme Vicente
 date: 2022-10-04
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+Este é meu **primeiro post** no blog.
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+Acrescentar apenas um asterisco para *itálico*.
 
+~~Riscar um texto usando dois til~~.
+
+Formatar um texto como código inserindo entre crase: `usethis::use_git`
+
+Como colocar um link? Basta inserir colchetes, e logo em seguida parentesis, sendo o texto que você deseja entre os colchetes e o link entre o parentesis [Pelo de Gato](https://guivicente967.github.io/pelodegato/). O código fica assim: `[Pelo de Gato](https://guivicente967.github.io/pelodegato/)`.
+
+Para criar listas não númeradas, basta inserir o traço simples antes do texto:
+
+-   Guilherme
+
+-   Rosangela
+
+-   Eduardo
+
+-   Tapioca
+
+Criar listas numéricas
+
+1.  Guilherme
+
+2.  Rosangela
+
+3.  Eduardo
+
+## Inserir imagens
+
+usar o visual editor e clicar na imagem. Logo após será aberto um pop-up, no qual poderemos inserir o endereço da imagem. Para saber o endereço da imagem (caso ela não esteja salva no seu computador) basta clicar com o botão direito do mouse e selecionar a opção *copiar endereço da imagem*
+
+![](https://blog.curso-r.com/images/posts/conteudo/2022-09-13-senha-no-script/logo-featured.jpg)
+
+## Inserir e rodar códigos em R (Code Chunks)
+
+```{r echo=TRUE}
+# aqui inserimos o código em R
+
+1+1
+```
+
+Criamos um code chunk!
+
+## Eliminando mensagens ao carregar pacotes
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# {r echo=TRUE, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+```
+
+## Carregando uma tabela (tabelas pequenas, sumarizações)
+
+```{r echo=TRUE}
+knitr::kable(mtcars)
+```
+
+
+## Carregando um plot
+
+```{r echo=TRUE}
+plot(mtcars$mpg, mtcars$hp)
+
+```
 

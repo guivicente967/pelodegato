@@ -15,5 +15,22 @@
     "preview": {},
     "last_modified": "2022-10-04T12:23:22-03:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2022-10-04-anlise-da-base-rais/",
+    "title": "Análise da base RAIS",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2022-10-04",
+    "categories": [],
+    "contents": "\r\nEsse é meu primeiro projeto\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-10-04T12:47:09-03:00",
+    "input_file": "anlise-da-base-rais.knit.md"
   }
 ]

@@ -1,0 +1,12 @@
+name: "."
+title: "Pelo de Gato"
+description: |
+  Pelo de Gato
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
